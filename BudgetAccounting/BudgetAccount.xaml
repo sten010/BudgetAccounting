@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="BudgetAccounting.budgetAccount"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BudgetAccounting"
+             mc:Ignorable="d" 
+             d:DesignHeight="112.5" d:DesignWidth="308">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Image Name="AccountImage"  Source="/Image/equals.png" />
+        <TextBlock Name="Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="27" Width="204" Grid.Column="1"/>
+        <TextBlock Name="Description" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Height="28" Width="204" Grid.Column="1"/>
+        <TextBlock Name="Money" HorizontalAlignment="Left" Margin="176,0,0,0" VerticalAlignment="Center" Height="26" Width="114" Grid.Column="1"/>
+
+    </Grid>
+</UserControl>
